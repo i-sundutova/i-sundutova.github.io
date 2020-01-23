@@ -1,0 +1,11 @@
+﻿@import 'variables.scss';
+
+#main-bar {
+    position: relative;
+    left: 200px;
+    color: #ffffff;
+    /*padding: 30px 50px;*/
+    width: calc(100% - 200px);
+    height: 100%;
+    overflow-x: hidden;
+}

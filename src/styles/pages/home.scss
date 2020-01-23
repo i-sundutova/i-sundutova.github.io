@@ -1,0 +1,56 @@
+﻿@import '../../styles/variables.scss';
+
+#page-home {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .particles-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .introduction-container {
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        .name, .surname {
+            line-height: 1;
+            text-transform: uppercase;
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .name {
+            font-size: 80px;
+        }
+
+        .surname {
+            font-size: 50px;
+        }
+
+        .monoton {
+            font-family: 'Monoton', cursive;
+            color: $color-accent;
+        }
+    }
+
+    &:after {
+        content: 'M';
+        position: absolute;
+        right: -100px;
+        bottom: -100px;
+        font-family: 'Monoton', cursive;
+        font-size: 800px;
+        color: #ffffff;
+        opacity: 0.1;
+        transform: rotate(35deg);
+        line-height: 1;
+    }
+}

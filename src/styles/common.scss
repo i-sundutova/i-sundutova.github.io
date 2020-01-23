@@ -1,0 +1,17 @@
+﻿@import 'variables.scss';
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+    min-width: 360px;
+}
+
+body {
+    margin: 0 auto;
+    background: $color-primary;
+
+    #root, #main-container {
+        height: 100%;
+    }
+}

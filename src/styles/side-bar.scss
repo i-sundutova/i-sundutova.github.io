@@ -1,0 +1,91 @@
+﻿@import 'variables.scss';
+
+#side-bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    background: $color-secondary;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+
+    .logo {
+        width: 60px;
+        height: 75px;
+        background: url('/images/logo-white.png') no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    .main-menu {
+        .menu-item {
+            font-size: 2rem;
+            color: $color-accent;
+            display: block;
+            text-decoration: none;
+            position: relative;
+            transition: color 0.2s linear;
+
+            & + .menu-item {
+                margin-top: 2rem;
+            }
+
+            & > .item {
+                position: relative;
+
+                &:hover {
+                    color: #ffffff;
+                }
+
+                &:before, &:after {
+                    position: absolute;
+                    color: $color-accent;
+                }
+
+                &:before {
+                    content: '[';
+                    left: -10px;
+                }
+
+                &:after {
+                    content: ']';
+                    right: -10px;
+                }
+            }
+        }
+    }
+
+
+    .language-switcher {
+        & > .language {
+            padding: 0px 10px 3px;
+            background: $color-accent;
+            color: $color-secondary;
+            cursor: pointer;
+            display: inline-block;
+
+            & + .language {
+                margin-left: 15px;
+            }
+
+            &:hover {
+                background: #ffffff;
+            }
+
+            &.disabled {
+                pointer-events: none;
+                cursor: default;
+                background: rgba($color-accent, 0.8);
+
+                &:hover {
+                    background: rgba($color-accent, 0.8);
+                }
+            }
+        }
+    }
+}

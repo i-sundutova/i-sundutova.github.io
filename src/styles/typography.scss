@@ -1,0 +1,25 @@
+﻿@import 'variables.scss';
+
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+    @media (min-width: $extra-small-screen-up) and (max-width: 600px) {
+        font-size: 11px;
+    }
+
+    @media (min-width: 601px) and (max-width: $small-screen) {
+        font-size: 12px;
+    }
+}
+
+body {
+    font: 400 2rem/1.6 'Oswald', sans-serif;
+    color: $color-primary;
+}
