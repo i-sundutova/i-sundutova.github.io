@@ -30,6 +30,7 @@
             text-decoration: none;
             position: relative;
             transition: color 0.2s linear;
+            outline: none;
 
             & + .menu-item {
                 margin-top: 2rem;

@@ -1,13 +1,13 @@
 ﻿import React from 'react';
-import { Languages } from '../utils/Languages';
+import { Languages } from '../../utils/Languages';
 
-export const Contacts = (props) => {
+const Contacts = (props) => {
+    let language = props.currentLanguage;
 
     let enDictionary = { pageName: 'Contacts' };
     let uaDictionary = { pageName: 'Контакти' };
 
-
-    if (props.language == Languages.EN) {
+    if (language === Languages.EN) {
         return <ContactsContent dictionary={enDictionary} />
     }
     else { return <ContactsContent dictionary={uaDictionary} /> }
@@ -21,3 +21,5 @@ const ContactsContent = (props) => {
         </div>
     )
 }
+
+export default Contacts;

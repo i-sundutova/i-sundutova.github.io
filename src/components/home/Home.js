@@ -1,22 +1,14 @@
-﻿import React, { Component } from 'react';
+﻿import React from 'react';
 import Particles from 'react-particles-js';
-import { Languages } from '../utils/Languages';
+import { Languages } from '../../utils/Languages';
 
+const Home = (props) => {
+    let enDictionary = { name: 'ryna', surname: 'Martyniuk', text: 'web developer' };
+    let uaDictionary = { name: 'рина', surname: 'Мартинюк', text: 'web developer' };
 
-export class Home extends Component {
-    static displayName = Home.name;
+    if (props.currentLanguage === Languages.EN) return <HomeContent dictionary={enDictionary} />
 
-    render() {
-
-        let enDictionary = { name: 'ryna', surname: 'Martyniuk', text: 'web developer' };
-        let uaDictionary = { name: 'рина', surname: 'Мартинюк', text: 'web developer' };
-        
-
-        if (this.props.language === Languages.EN) {
-            return <HomeContent dictionary={enDictionary} />
-        }
-        else { return <HomeContent dictionary={uaDictionary} /> }
-    }
+    else { return <HomeContent dictionary={uaDictionary} /> }
 }
 
 
@@ -37,3 +29,5 @@ const HomeContent = (props) => {
         </div>
     )
 }
+
+export default Home;

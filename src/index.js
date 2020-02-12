@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { LanguageContainer } from './components/partials/LanguageContainer';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux'
+
 import registerServiceWorker from './registerServiceWorker';
 
-import store from './store.js'
+import AppContainer from './components/app/AppContainer'
+import store from './redux-store';
 
 
 ReactDOM.render(
-    <Router>
-        <LanguageContainer store={store} />
-    </Router>,
+    <BrowserRouter>
+        <Provider store={store}>
+            <AppContainer />
+        </Provider>
+    </BrowserRouter>,
     document.getElementById('root'));
 
-registerServiceWorker();
 
+registerServiceWorker();

@@ -1,6 +1,6 @@
 ﻿import React from 'react';
-import { LanguageSwitcher } from './partials/LanguageSwitcher';
-import { MainMenu } from './MainMenu';
+import LanguageSwitcherContainer from './languageSwitcher/LanguageSwitcherContainer';
+import MainMenu from './MainMenu';
 
 export const SideBar = (props) => {
 
@@ -8,8 +8,8 @@ export const SideBar = (props) => {
         <div id="side-bar">
             <div className="logo"></div>
 
-            <MainMenu language={props.store._state.language} />
+            <MainMenu />
 
-            <LanguageSwitcher store={props.store} />
+            <LanguageSwitcherContainer />
         </div>)
 }

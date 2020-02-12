@@ -1,10 +1,10 @@
 ﻿import { createStore, combineReducers } from "redux";
-import { languageReducer } from "./reducers";
+
+import { languageReducer } from "./reducers/languageReducer";
 
 let reducers = combineReducers({
-    languageData: languageReducer
+    siteLanguage: languageReducer
 });
-
 
 let store = createStore(reducers);
 
