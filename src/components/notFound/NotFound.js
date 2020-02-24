@@ -4,7 +4,10 @@
 const NotFound = (props) => {
     return (
         <div className="page" id="pageNotFound">
-            <h1>{props.dictionary.message}</h1>
+            <div className="notFoundContainer">
+                <p className="errorCode">404</p>
+                <p className="errorMessage">{props.dictionary.pageName}</p>
+            </div>
         </div>
     )
 }

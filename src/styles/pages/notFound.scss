@@ -1,6 +1,33 @@
 #pageNotFound {
-  &:after {
-    @include decoratedLetter;
-    content: "?";
+  .notFoundContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+
+    .errorMessage {
+      font-size: 5rem;
+      opacity: 0.2;
+    }
+
+    .errorCode {
+      font-family: "Monoton", cursive;
+      font-size: 40rem;
+      color: #ffffff;
+      opacity: 0.2;
+      line-height: 1;
+
+      @include media-for-screen-lg-and-down {
+        font-size: 20rem;
+      }
+
+      @include media-for-screen-sm-and-down {
+        font-size: 10rem;
+      }
+    }
   }
 }

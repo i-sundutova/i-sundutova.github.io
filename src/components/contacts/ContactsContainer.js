@@ -3,10 +3,10 @@ import { compose } from 'redux'
 import { connect } from "react-redux"
 import { withRouter } from 'react-router-dom';
 import { localizationCheck } from '../../hoc/localization';
-import Contacts from "./Contacts"
-import { Languages } from '../../utils/Languages';
 import emailjs from 'emailjs-com';
+import { Languages } from '../../utils/Languages';
 import { sendMailActionCreator, sendMailSuccessActionCreator, sendMailFailureActionCreator } from '../../reducers/contactsReducer';
+import Contacts from "./Contacts"
 
 
 class ContactsContainer extends React.Component {

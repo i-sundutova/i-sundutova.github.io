@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route, Switch, Redirect, withRouter } from 'react-router-dom'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { Layout } from '../Layout';
 import HomeContainer from '../home/HomeContainer';
 import ProfileContainer from '../profile/ProfileContainer';
 import ContactsContainer from '../contacts/ContactsContainer';
 import NotFoundContainer from '../notFound/NotFoundContainer';
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
+
 import '../../styles/compiled.scss'
 
 class App extends React.Component {

@@ -1,10 +1,10 @@
 ﻿import React from 'react';
-import Home from './Home';
 import { compose } from 'redux'
 import { connect } from "react-redux"
 import { withRouter } from 'react-router-dom';
 import { localizationCheck } from '../../hoc/localization';
 import { Languages } from '../../utils/Languages';
+import Home from './Home';
 
 
 class HomeContainer extends React.Component {

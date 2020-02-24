@@ -1,8 +1,8 @@
 ﻿import React, { Component } from 'react';
 import { connect } from "react-redux"
 import { LanguageSwitcher } from "./LanguageSwitcher"
-
 import { changeLanguageActionCreator } from "../../reducers/languageReducer"
+
 
 class LanguageSwitcherContainer extends Component {
     onLanguageChanged = (language) => {
