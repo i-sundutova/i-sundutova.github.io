@@ -12,7 +12,7 @@ import { sendMailActionCreator, sendMailSuccessActionCreator, sendMailFailureAct
 class ContactsContainer extends React.Component {
     sendContactEmail = async (data) => {
         await this.props.sendMail();
-        await emailjs.send('gmail', 'template_profile_c', data, 'user_tU0PKMcaJmjVUQ92i4GOQ')
+        await emailjs.send('gmail', 'template_profile_contact_me', data, 'user_tU0PKMcaJmjVUQ92i4GOQ')
             .then(() => this.props.sendMailSetSuccess(), () => this.props.sendMailSetFailure());
     }
 
