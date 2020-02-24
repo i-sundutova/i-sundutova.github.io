@@ -4,10 +4,24 @@
 @import 'typography.scss';
 @import 'variables.scss';
 @import 'layout.scss';
+@import 'grid.scss';
+
+@import 'controls/buttons.scss';
+@import 'controls/form.scss';
+@import 'controls/alerts.scss';
+@import 'controls/lists.scss';
+@import 'controls/panels.scss';
+
+@import 'helpers.scss';
 
 @import 'common.scss';
+@import 'decoration.scss';
 
+@import 'hamburger-menu.scss';
 @import 'side-bar.scss';
 @import 'main-bar.scss';
 
 @import 'pages/home.scss';
+@import 'pages/profile.scss';
+@import 'pages/contacts.scss';
+@import 'pages/notFound.scss';

@@ -1,17 +1,54 @@
-﻿@import 'variables.scss';
+﻿@import "variables.scss";
 
-html, body {
-    height: 100%;
-    min-height: 100%;
-    width: 100%;
-    min-width: 360px;
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 360px;
 }
 
 body {
-    margin: 0 auto;
-    background: $color-primary;
+  margin: 0 auto;
+  background: $color-primary;
 
-    #root, #main-container {
-        height: 100%;
+  #root,
+  #main-container {
+    height: 100%;
+    max-height: 100%;
+
+    .page {
+      padding: 40px;
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+
+      @include media-for-screen-xs {
+        margin: 0 20px;
+      }
     }
+  }
+}
+
+section + section {
+  margin-top: 50px;
+}
+
+.transition-fade-enter {
+  opacity: 0;
+}
+
+.transition-fade-enter.transition-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.transition-fade-exit {
+  opacity: 1;
+}
+
+.transition-fade-exit.transition-fade-exit-active {
+  opacity: 0;
+  display: none;
+  transition: opacity 300ms linear;
 }

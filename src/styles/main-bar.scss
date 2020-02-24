@@ -7,5 +7,12 @@
     /*padding: 30px 50px;*/
     width: calc(100% - 200px);
     height: 100%;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+    
+
+    @include media-for-screen-md-and-down {
+        left: 0;
+        width: 100%;
+        height: calc(100% - 80px);
+    }
 }

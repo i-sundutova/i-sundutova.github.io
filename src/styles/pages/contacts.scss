@@ -1,0 +1,77 @@
+﻿@import "../../styles/variables.scss";
+@import "../../styles/decoration.scss";
+
+#pageContacts {
+  .contactContainer {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50%;
+
+    @include media-for-screen-md-and-down {
+      position: relative;
+      transform: none;
+      left: unset;
+      right: unset;
+      top: unset;
+      width: 80%;
+    }
+
+    @include media-for-screen-sm-and-down {
+      width: 100%;
+    }
+
+    .contact-items {
+      margin: 20px 0;
+      padding: 10px;
+      text-align: center;
+
+      .contact-item {
+        white-space: nowrap;
+        margin: 0 15px;
+      }
+    }
+    .contactForm {
+      .btn[type="submit"] {
+        .btn-text {
+          visibility: visible;
+        }
+
+        .preloader {
+          position: absolute;
+          top: calc(50% - 1.5rem);
+          left: calc(50% - 1.5rem);
+          width: 3rem;
+          visibility: hidden;
+
+          & > img {
+            width: 100%;
+          }
+        }
+
+        &.preloaderMode {
+          pointer-events: none;
+          opacity: 0.8;
+          position: relative;
+
+          .btn-text {
+            visibility: hidden;
+          }
+
+          .preloader {
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  &:after {
+    @include decoratedLetter;
+    content: "@";
+  }
+}

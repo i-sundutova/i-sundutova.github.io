@@ -1,0 +1,208 @@
+@import "variables.scss";
+@import "helpers.scss";
+
+$grid-cols-count: 12;
+$grid-cols-padding: 20px;
+
+.row {
+    margin-left: (-1 * $grid-cols-padding);
+    margin-right: (-1 * $grid-cols-padding);
+
+    @include clearfix();
+
+    .col {
+        float: left;
+        box-sizing: border-box;
+        padding: 0 $grid-cols-padding;
+        min-height: 1px;
+        margin-bottom: 20px; // as responsive margin is hard to add to specific col size combinations, its temp solution
+
+        &[class*="push-"],
+        &[class*="pull-"] {
+            position: relative;
+        }
+
+        $i: 1;
+
+        @while $i <= $grid-cols-count {
+            $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+            &.xs#{$i} {
+                width: $perc;
+                margin-left: auto;
+                left: auto;
+                right: auto;
+            }
+
+            $i: $i + 1;
+        }
+
+        $i: 1;
+
+        @while $i <= $grid-cols-count {
+            $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+            &.offset-xs#{$i} {
+                margin-left: $perc;
+            }
+
+            &.pull-xs#{$i} {
+                right: $perc;
+            }
+
+            &.push-xs#{$i} {
+                left: $perc;
+            }
+
+            $i: $i + 1;
+        }
+
+        @include media-for-screen-sm-and-up {
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.sm#{$i} {
+                    width: $perc;
+                    margin-left: auto;
+                    left: auto;
+                    right: auto;
+                }
+
+                $i: $i + 1
+            }
+
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.offset-sm#{$i} {
+                    margin-left: $perc;
+                }
+
+                &.pull-sm#{$i} {
+                    right: $perc;
+                }
+
+                &.push-sm#{$i} {
+                    left: $perc;
+                }
+
+                $i: $i + 1;
+            }
+        }
+
+        @include media-for-screen-md-and-up {
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.md#{$i} {
+                    width: $perc;
+                    margin-left: auto;
+                    left: auto;
+                    right: auto;
+                }
+
+                $i: $i + 1
+            }
+
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.offset-md#{$i} {
+                    margin-left: $perc;
+                }
+
+                &.pull-md#{$i} {
+                    right: $perc;
+                }
+
+                &.push-md#{$i} {
+                    left: $perc;
+                }
+
+                $i: $i + 1;
+            }
+        }
+
+        @include media-for-screen-lg-and-up {
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.lg#{$i} {
+                    width: $perc;
+                    margin-left: auto;
+                    left: auto;
+                    right: auto;
+                }
+
+                $i: $i + 1;
+            }
+
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.offset-lg#{$i} {
+                    margin-left: $perc;
+                }
+
+                &.pull-lg#{$i} {
+                    right: $perc;
+                }
+
+                &.push-lg#{$i} {
+                    left: $perc;
+                }
+
+                $i: $i + 1;
+            }
+        }
+
+        @include media-for-screen-xl {
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.xl#{$i} {
+                    width: $perc;
+                    margin-left: auto;
+                    left: auto;
+                    right: auto;
+                }
+
+                $i: $i + 1;
+            }
+
+            $i: 1;
+
+            @while $i <= $grid-cols-count {
+                $perc: unquote((100 / ($grid-cols-count / $i)) + "%");
+
+                &.offset-xl#{$i} {
+                    margin-left: $perc;
+                }
+
+                &.pull-xl#{$i} {
+                    right: $perc;
+                }
+
+                &.push-xl#{$i} {
+                    left: $perc;
+                }
+
+                $i: $i + 1;
+            }
+        }
+    }
+}

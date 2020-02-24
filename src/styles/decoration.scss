@@ -1,0 +1,18 @@
+@mixin decoratedLetter {
+    position: fixed;
+    right: -10rem;
+    bottom: -10rem;
+    font-family: "Monoton", cursive;
+    font-size: 80rem;
+    color: #ffffff;
+    opacity: 0.1;
+    transform: rotate(35deg);
+    line-height: 1;
+    z-index: -1;
+    content: "";
+    transition: opacity 300ms linear;
+
+    @include media-for-screen-sm-and-down {
+        opacity: 0;
+    }
+}

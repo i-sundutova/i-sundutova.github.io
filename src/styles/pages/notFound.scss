@@ -1,0 +1,6 @@
+#pageNotFound {
+  &:after {
+    @include decoratedLetter;
+    content: "?";
+  }
+}

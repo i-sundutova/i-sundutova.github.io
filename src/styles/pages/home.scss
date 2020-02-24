@@ -1,57 +1,73 @@
-﻿@import '../../styles/variables.scss';
+﻿@import "../../styles/variables.scss";
+@import "../../styles/decoration.scss";
 
-#page-home {
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+#pageHome {
+  .particlesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 
-    .particles-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+    @include media-for-screen-xs {
+      opacity: 0.5;
+    }
+  }
+
+  .introductionContainer {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    .name,
+    .surname {
+      line-height: 1;
+      text-transform: uppercase;
+      font-family: "Russo One", sans-serif;
     }
 
-    .introduction-container {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-
-        .name, .surname {
-            line-height: 1;
-            text-transform: uppercase;
-            font-family: 'Russo One', sans-serif;
-        }
-
-        .name {
-            font-size: 80px;
-        }
-
-        .surname {
-            font-size: 50px;
-        }
-
-        .monoton {
-            font-family: 'Monoton', cursive;
-            color: $color-accent;
-        }
+    .name {
+      font-size: 8rem;
     }
 
-    &:after {
-        content: 'M';
-        position: absolute;
-        right: -100px;
-        bottom: -100px;
-        font-family: 'Monoton', cursive;
-        font-size: 800px;
-        color: #ffffff;
-        opacity: 0.1;
-        transform: rotate(35deg);
-        line-height: 1;
-        z-index: -1;
+    .surname {
+      font-size: 5rem;
     }
+
+    .monoton {
+      font-family: "Monoton", cursive;
+      color: $color-accent;
+    }
+
+    .summary {
+      margin-top: 4rem;
+      width: 80%;
+
+      @include media-for-screen-md-and-down {
+        width: 100%;
+      }
+    }
+
+    .gitLink {
+      margin-top: 3rem;
+
+      & > img {
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+
+      & > .a {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &:after {
+    @include decoratedLetter;
+    content: "M";
+  }
 }

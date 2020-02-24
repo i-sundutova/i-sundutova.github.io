@@ -11,7 +11,7 @@ export const LanguageSwitcher = (props) => {
 
         return (
             <div className="language-switcher">
-                <span className={"language" + (currentLanguage === Languages.EN ? " disabled" : "")} onClick={() => changeLanguage(Languages.EN)}>en</span>
-                <span className={"language" + (currentLanguage === Languages.UA ? " disabled" : "")} onClick={() => changeLanguage(Languages.UA)}>ua</span>
+                <span className={"language" + (currentLanguage === Languages.EN ? " disabled" : "")} onClick={() => changeLanguage(Languages.EN)}>eng</span>
+                <span className={"language" + (currentLanguage === Languages.UA ? " disabled" : "")} onClick={() => changeLanguage(Languages.UA)}>укр</span>
             </div>);
 }

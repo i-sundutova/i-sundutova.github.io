@@ -1,14 +1,13 @@
 ﻿import React from 'react';
 import LanguageSwitcherContainer from './languageSwitcher/LanguageSwitcherContainer';
-import MainMenu from './MainMenu';
+import MainMenuContainer from './mainMenu/MainMenuContainer';
 
 export const SideBar = (props) => {
-
     return (
         <div id="side-bar">
             <div className="logo"></div>
 
-            <MainMenu />
+            <MainMenuContainer hamburgerMenuStatus={props.hamburgerMenuStatus}/>
 
             <LanguageSwitcherContainer />
         </div>)

@@ -1,0 +1,16 @@
+#pageProfile {
+  &:after {
+    @include decoratedLetter;
+    content: "S";
+  }
+
+  .placeOfWork {
+    .workDescription {
+      margin: 25px 0 25px 40px;
+    }
+
+    & + .placeOfWork {
+      margin-top: 40px;
+    }
+  }
+}

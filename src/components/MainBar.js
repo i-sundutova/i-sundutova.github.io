@@ -1,13 +1,16 @@
-﻿import React, { Component } from 'react';
+﻿import React from 'react';
 
-export class MainBar extends Component {
-    static displayName = MainBar.name;
+export const MainBar = (props) => {
+    const [hamburgerMenuShown, setHamburgerMenuShown] = props.hamburgerMenuStatus;
 
-    render() {
-        return (
-            <div id="main-bar">
-                {this.props.children}
-            </div>
-        );
+    const changeMenuStatus = () => {
+        if (hamburgerMenuShown) setHamburgerMenuShown(!hamburgerMenuShown);
+        else return;
     }
+
+    return (
+        <div id="main-bar" onClick={changeMenuStatus}>
+            {props.children}
+        </div>
+    );
 }

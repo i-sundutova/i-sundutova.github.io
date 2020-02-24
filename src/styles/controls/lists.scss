@@ -1,0 +1,67 @@
+@import "../variables.scss";
+
+ul.list {
+    margin: 20px 0;
+
+    li {
+        padding-left: 20px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background-color: $color-accent;
+            position: absolute;
+            left: 0;
+            top: calc(0.525em);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+
+        & + li {
+            margin-top: 0.8em;
+        }
+
+        .list {
+            margin-top: 0.8em;
+        }
+
+        ul.list > li:before {
+            background-color: transparent;
+            border: 1px solid $color-accent;
+        }
+    }
+}
+
+ol.list {
+    margin: 20px 0;
+    counter-reset: li;
+
+    & > li {
+        padding-left: 25px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            counter-increment: li;
+            content: counters(li,".") ".";
+            color: $color-accent;
+            top: 0;
+            left: 0;
+        }
+
+        & + li {
+            margin-top: 0.8em;
+        }
+
+        .list {
+            margin-top: 0.8em;
+        }
+
+        ol.list {
+            li {
+                padding-left: 35px;
+            }
+        }
+    }
+}

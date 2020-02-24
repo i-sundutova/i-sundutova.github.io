@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+.panel {
+  color: $color-secondary;
+  padding: 25px;
+  margin: 25px;
+
+  &.accent {
+    background: $color-accent;
+  }
+
+  &.white {
+    background: #ffffff;
+  }
+}

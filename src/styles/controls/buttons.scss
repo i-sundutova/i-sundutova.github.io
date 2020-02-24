@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+
+.btn {
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    border: 1px solid transparent;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    color: $color-primary;
+
+    &.disabled {
+        cursor: auto;
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    &.accent {
+        background: $color-accent;
+
+        &:hover, &:focus {
+            background: lighten($color-accent, 15);
+        }
+    }
+
+    &.white {
+        background: #ffffff;
+
+        &:hover, &:focus {
+            background: $color-accent;
+        }
+    }
+
+    &.sm {
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+    }
+
+    &.md {
+        min-width: 12rem;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+
+    &.lg {
+        min-width: 14rem;
+        padding: 1.2rem 4rem;
+        font-size: 2rem;
+    }
+}

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { SideBar } from './SideBar';
 import { MainBar } from './MainBar';
 
 export const Layout = (props) => {
+    const hamburgerMenuStatus = useState(false);
+
     return (
         <div id="main-container">
-            <SideBar />
+            <SideBar hamburgerMenuStatus={hamburgerMenuStatus} />
 
-            <MainBar>
+            <MainBar hamburgerMenuStatus={hamburgerMenuStatus}>
                 {props.children}
             </MainBar>
       </div>

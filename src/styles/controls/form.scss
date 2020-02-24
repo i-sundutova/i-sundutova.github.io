@@ -1,0 +1,49 @@
+@import "../../styles/variables.scss";
+
+form, .form {
+  .formControl {
+    position: relative;
+
+    & + .formControl {
+      margin-top: 35px;
+    }
+
+    input, textarea {
+      display: block;
+      border: 1px solid #ffffff;
+      padding: 10px 15px;
+      background: #ffffff;
+      width: 100%;
+      font-size: 2rem;
+      color: $color-secondary;
+    }
+
+    input:focus:not([readonly]), textarea {
+      &.input-validation-error {
+        border-color: $color-error !important;
+        box-shadow: none;
+      }
+    }
+
+    &.inputValidationError {
+      input, textarea {
+        border-color: $color-error !important;
+      }
+    }
+
+    .fieldValidationError {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      font-size: 1.4rem;
+      color: $color-error;
+    }
+
+    textarea {
+      overflow: hidden;
+      resize: vertical;
+      min-height: 150px;
+      max-height: 200px;
+    }
+  }
+}

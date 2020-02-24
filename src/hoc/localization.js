@@ -3,7 +3,6 @@ import { connect } from "react-redux"
 import { compose } from 'redux'
 import { Redirect, withRouter } from "react-router-dom"
 import { changeLanguageActionCreator } from '../reducers/languageReducer'
-
 import { languageIsValid, setLanguageCookie } from '../utils/helpers'
 
 const mapStateToPropsForRedirect = (state) => {

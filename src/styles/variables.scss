@@ -1,23 +1,221 @@
-﻿$extra-small-screen: 500px !default;
-$extra-small-screen-up: 501px !default;
+﻿$color-primary: #2c2c2c;
 
-$small-screen: 800px !default;
-$small-screen-up: 801px !default;
-
-$medium-screen: 1020px !default;
-$medium-screen-up: 1021px !default;
-
-$large-screen: 1140px !default;
-$large-screen-up: 1141px !default;
-
-
-//-------------------------------------
-
-
-$color-primary: #2c2c2c;
-
-$color-secondary: #212121;
+$color-secondary: #222020;
 
 $color-accent: #ffbf00;
 
-$color-active: #b04561;
+$color-error: #e43939;
+$color-warning: #e48639;
+$color-success: #299655;
+
+$screen-xs-end: 599.99px !default;
+$screen-sm-start: 600px !default;
+$screen-sm-end: 899.99px !default;
+$screen-md-start: 900px !default;
+$screen-md-end: 1199.99px !default;
+$screen-lg-start: 1200px !default;
+$screen-lg-end: 1799.99px !default;
+$screen-xl-start: 1800px !default;
+
+//-------------------------------------
+/*#region media mixins */
+@mixin media-for-screen-xs {
+  @media (max-width: $screen-xs-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-sm {
+  @media (min-width: $screen-sm-start) and (max-width: $screen-sm-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-sm-and-up {
+  @media (min-width: $screen-sm-start) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-sm-and-down {
+  @media (max-width: $screen-sm-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-md {
+  @media (min-width: $screen-md-start) and (max-width: $screen-md-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-md-and-up {
+  @media (min-width: $screen-md-start) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-md-and-down {
+  @media (max-width: $screen-md-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-lg {
+  @media (min-width: $screen-lg-start) and (max-width: $screen-lg-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-lg-and-up {
+  @media (min-width: $screen-lg-start) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-lg-and-down {
+  @media (max-width: $screen-lg-end) {
+    @content;
+  }
+}
+
+@mixin media-for-screen-xl {
+  @media (min-width: $screen-xl-start) {
+    @content;
+  }
+}
+/*#endregion */
+
+/*#region helper classes */
+.hide-on-screen-xs {
+  @include media-for-screen-xs {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-sm {
+  @include media-for-screen-sm {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-sm-and-up {
+  @include media-for-screen-sm-and-up {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-sm-and-down {
+  @include media-for-screen-sm-and-down {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-md {
+  @include media-for-screen-md {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-md-and-up {
+  @include media-for-screen-md-and-up {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-md-and-down {
+  @include media-for-screen-md-and-down {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-lg {
+  @include media-for-screen-lg {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-lg-and-up {
+  @include media-for-screen-lg-and-up {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-lg-and-down {
+  @include media-for-screen-lg-and-down {
+    display: none !important;
+  }
+}
+
+.hide-on-screen-xl {
+  @include media-for-screen-xl {
+    display: none !important;
+  }
+}
+
+.show-on-screen-xs {
+  @include media-for-screen-xs {
+    display: block !important;
+  }
+}
+
+.show-on-screen-sm {
+  @include media-for-screen-sm {
+    display: block !important;
+  }
+}
+
+.show-on-screen-sm-and-up {
+  @include media-for-screen-sm-and-up {
+    display: block !important;
+  }
+}
+
+.show-on-screen-sm-and-down {
+  @include media-for-screen-sm-and-down {
+    display: block !important;
+  }
+}
+
+.show-on-screen-md {
+  @include media-for-screen-md {
+    display: block !important;
+  }
+}
+
+.show-on-screen-md-and-up {
+  @include media-for-screen-md-and-up {
+    display: block !important;
+  }
+}
+
+.show-on-screen-md-and-down {
+  @include media-for-screen-md-and-down {
+    display: block !important;
+  }
+}
+
+.show-on-screen-lg {
+  @include media-for-screen-lg {
+    display: block !important;
+  }
+}
+
+.show-on-screen-lg-and-up {
+  @include media-for-screen-lg-and-up {
+    display: block !important;
+  }
+}
+
+.show-on-screen-lg-and-down {
+  @include media-for-screen-lg-and-down {
+    display: block !important;
+  }
+}
+
+.show-on-screen-xl {
+  @include media-for-screen-xl {
+    display: block !important;
+  }
+}
+/*#endregion */
