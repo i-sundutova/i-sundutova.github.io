@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProfileEN = () => {
+const ProfileUA = () => {
     return (
         <div className="page" id="pageProfile">
             <h1>Навики та досвід</h1>
@@ -44,17 +44,17 @@ const ProfileEN = () => {
                     <div className="workDescription">
                         <ul className="list">
                             <li>Фронтенд і бекенд розробка веб-проектів.</li>
-                            <li>Посередництво та упраління філією компнанії в Україні.</li>
+                            <li>Посередництво та управління філією компанії в Україні.</li>
                             <li>Організація працевлаштування, пошук оптимальних кандидатів на роботу в компанію.</li>
                         </ul>
 
                         <h4>Проекти:</h4>
-                        <p><a className="a" href="https://www.sfx-markets.com" target="_blank" rel="nofollow noreferrer noopener">SFX Markets</a> - Ліцензований брокер Forex. Складна CRM-система з використанням наступних технологій: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
-                        <p><a className="a" href="https://nordhillcapital.com" target="_blank" rel="nofollow noreferrer noopener">Nordhill Capital</a> - Інвестиційний фонд. Розробка веб-сайту компанії та CRM-системи з використанням наступних технологій: C#, ASP.NET MVC, Kendo MVC, HTML, CSS/SASS, JS, JQuery, Vue.js, Vuetify.js.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190131162036/https://www.sfx-markets.com/" target="_blank" rel="nofollow noreferrer noopener">SFX Markets</a> - Ліцензований брокер Forex. Складна CRM-система з використанням наступних технологій: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190109161714/https://nordhillcapital.com/" target="_blank" rel="nofollow noreferrer noopener">Nordhill Capital</a> - Інвестиційний фонд. Розробка веб-сайту компанії та CRM-системи з використанням наступних технологій: C#, ASP.NET MVC, Kendo MVC, HTML, CSS/SASS, JS, JQuery, Vue.js, Vuetify.js.</p>
                         <p><a className="a" href="https://www.lirunex.com" target="_blank" rel="nofollow noreferrer noopener">Lirunex</a> - Ліцензований брокер Forex. Розробка веб-сайту компанії та CRM-системи з використанням наступних технологій: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
-                        <p><a className="a" href="http://rossi-solutions.com" target="_blank" rel="nofollow noreferrer noopener">Rossi Solutions</a> - сайт-візитка.</p>
-                        <p><a className="a" href="http://sfxglobal.com" target="_blank" rel="nofollow noreferrer noopener">SFX Global</a> - сайт-візитка.</p>
-                        <p><a className="a" href="http://reactive-brains.com" target="_blank" rel="nofollow noreferrer noopener">Reactive Brains</a> - сайт-візитка.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190509130215/http://rossi-solutions.com/" target="_blank" rel="nofollow noreferrer noopener">Rossi Solutions</a> - сайт-візитка.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190515165925/http://sfxglobal.com/" target="_blank" rel="nofollow noreferrer noopener">SFX Global</a> - сайт-візитка.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20180330055502/http://reactive-brains.com/" target="_blank" rel="nofollow noreferrer noopener">Reactive Brains</a> - сайт-візитка.</p>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ const ProfileEN = () => {
                     <div className="workDescription">
                         <ul className="list">
                             <li>Послуги перекладу (російська-англійська).</li>
-                            <li>Фронтенд розробка (HTML, CSS, JS)</li>
+                            <li>Фронтенд розробка (HTML, CSS, JS).</li>
                         </ul>
                     </div>
                 </div>
@@ -74,9 +74,9 @@ const ProfileEN = () => {
 
                     <div className="workDescription">
                         <ul className="list">
-                            <li>Управління контентом у середовищі Wordpress</li>
-                            <li>Оптимізація контенту для SEO</li>
-                            <li>Статистичний аналіз та обробка даних</li>
+                            <li>Управління контентом у середовищі Wordpress.</li>
+                            <li>Оптимізація контенту для SEO.</li>
+                            <li>Статистичний аналіз та обробка даних.</li>
                         </ul>
                     </div>
                 </div>
@@ -86,12 +86,12 @@ const ProfileEN = () => {
                 <div className="col xs12 md7">
                     <section id="education">
                         <h2>Освіта</h2>
-                        <h3>Національний університет "Львівська політехніка" <small>(2005-2011)</small></h3>
+                        <h3>Національний університет "Львівська політехніка" <small>(2006-2012)</small></h3>
 
                         <ul className="list">
-                            <li><b>Інститут:</b> Інститут комп'ютерних наук та інформаційних технологій</li>
-                            <li><b>Спеціальність:</b> Прикладна лінгвістика (Філологія)</li>
-                            <li><b>Ступінь:</b> Магістр (з відзнакою)</li>
+                            <li><b>Інститут:</b> Інститут комп'ютерних наук та інформаційних технологій.</li>
+                            <li><b>Спеціальність:</b> Прикладна лінгвістика (Філологія).</li>
+                            <li><b>Ступінь:</b> Магістр (з відзнакою).</li>
                         </ul>
                     </section>
                 </div>
@@ -101,9 +101,9 @@ const ProfileEN = () => {
                         <h3>Додаткова інформація</h3>
 
                         <p><strong>Мови:</strong> Англійська (intermediate), Російська.</p>
-                        <p><strong>Сімейний стан:</strong> одружена.</p>
+                        <p><strong>Сімейний стан:</strong> одружена, дітей немає.</p>
                         <p><strong>Вік:</strong> 30 років.</p>
-                        <p><strong>Хобі:</strong> фотозйомка.</p>
+                        <p><strong>Хобі:</strong> фото.</p>
                     </section>
                 </div>
             </div>
@@ -111,4 +111,4 @@ const ProfileEN = () => {
     )
 }
 
-export default ProfileEN;
+export default ProfileUA;

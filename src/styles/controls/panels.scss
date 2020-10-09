@@ -5,6 +5,10 @@
   padding: 25px;
   margin: 25px;
 
+  @include media-for-screen-xs {
+    margin: 0;
+  }
+
   &.accent {
     background: $color-accent;
   }

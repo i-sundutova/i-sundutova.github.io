@@ -17,7 +17,7 @@ const Contacts = (props) => {
             <div className="contactContainer">
                 <div className="contact-items">
                     <span className="contact-item"><span className="font-thin">telegram: </span><a className="a" href="https://t.me/iryna_martyniuk">@iryna_martyniuk</a></span>
-                    <span className="contact-item"><span className="font-thin">mail: </span><a className="a" href="mailto:isundutova@gmail.com">isundutova@gmail.com</a></span>
+                    <span className="contact-item"><span className="font-thin">mail: </span><a className="a" href="mailto:imartyniuk.work@gmail.com">imartyniuk.work@gmail.com</a></span>
                 </div>
 
                 <h1>{props.dictionary.pageName}</h1>

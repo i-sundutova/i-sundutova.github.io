@@ -49,17 +49,17 @@ const ProfileEN = () => {
                         </ul>
 
                         <h4>Projects:</h4>
-                        <p><a className="a" href="https://www.sfx-markets.com" target="_blank" rel="nofollow noreferrer noopener">SFX Markets</a> - Licensed Forex Broker. Complex CRM system using the following technologies: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
-                        <p><a className="a" href="https://nordhillcapital.com" target="_blank" rel="nofollow noreferrer noopener">Nordhill Capital</a> - Investment Fund. The company website and CRM system development using the following technologies: C#, ASP.NET MVC, Kendo MVC, HTML, CSS/SASS, JS, JQuery, Vue.js, Vuetify.js.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190131162036/https://www.sfx-markets.com/" target="_blank" rel="nofollow noreferrer noopener">SFX Markets</a> - Licensed Forex Broker. Complex CRM system using the following technologies: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190109161714/https://nordhillcapital.com/" target="_blank" rel="nofollow noreferrer noopener">Nordhill Capital</a> - Investment Fund. The company website and CRM system development using the following technologies: C#, ASP.NET MVC, Kendo MVC, HTML, CSS/SASS, JS, JQuery, Vue.js, Vuetify.js.</p>
                         <p><a className="a" href="https://www.lirunex.com" target="_blank" rel="nofollow noreferrer noopener">Lirunex</a> - Licensed Forex Broker. The company website and CRM system developed by using the following technologies: C#, ASP.NET MVC, Kendo MVC, SignalR, HTML, CSS/SASS, JS, JQuery, Vue.js, Element UI.</p>
-                        <p><a className="a" href="http://rossi-solutions.com" target="_blank" rel="nofollow noreferrer noopener">Rossi Solutions</a> - one-page business card website.</p>
-                        <p><a className="a" href="http://sfxglobal.com" target="_blank" rel="nofollow noreferrer noopener">SFX Global</a> - one-page business card website.</p>
-                        <p><a className="a" href="http://reactive-brains.com" target="_blank" rel="nofollow noreferrer noopener">Reactive Brains</a> - one-page business card website.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190509130215/http://rossi-solutions.com/" target="_blank" rel="nofollow noreferrer noopener">Rossi Solutions</a> - one-page business card website.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20190515165925/http://sfxglobal.com/" target="_blank" rel="nofollow noreferrer noopener">SFX Global</a> - one-page business card website.</p>
+                        <p><a className="a" href="https://web.archive.org/web/20180330055502/http://reactive-brains.com/" target="_blank" rel="nofollow noreferrer noopener">Reactive Brains</a> - one-page business card website.</p>
                     </div>
                 </div>
 
                 <div className="placeOfWork">
-                    <h3>Freelance <small>(Sept 2014 - Apr 2016)</small></h3>
+                    <h3>Freelance <small>(Aug 2014 - Apr 2016)</small></h3>
 
                     <div className="workDescription">
                         <ul className="list">
@@ -70,7 +70,7 @@ const ProfileEN = () => {
                 </div>
 
                 <div className="placeOfWork">
-                    <h3>DBA and SEO consultant. Tokyo Weekender (English magazine in Japan) <small>(Jan 2011 – Apr 2014, Remote job)</small></h3>
+                    <h3>DBA and SEO consultant. Tokyo Weekender (English magazine in Japan) <small>(Jan 2011 – Apr 2014, Remote)</small></h3>
 
                     <div className="workDescription">
                         <ul className="list">
@@ -86,7 +86,7 @@ const ProfileEN = () => {
                 <div className="col xs12 md7">
                     <section id="education">
                         <h2>Education</h2>
-                        <h3>Lviv Polytechnic National University <small>(2005-2011)</small></h3>
+                        <h3>Lviv Polytechnic National University <small>(2006-2012)</small></h3>
 
                         <ul className="list">
                             <li><b>Institute:</b> Institute of Computer Science and Information Technologies</li>

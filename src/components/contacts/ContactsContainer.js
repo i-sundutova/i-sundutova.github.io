@@ -40,7 +40,7 @@ class ContactsContainer extends React.Component {
 
         switch (this.props.currentLanguage) {
             case Languages.UA: return <Contacts dictionary={uaDictionary} sendContactEmail={this.sendContactEmail}
-                sendMailInProgress={this.props.sendMailInProgress} sendMailIsSuccessful={this.props.sendMailIsSuccessful} />;
+                sendMailInProgress={this.props.sendMailInProgress} sendMailIsSuccessful={this.props.sendMailIsSuccessful} />; 
 
             default: return <Contacts dictionary={enDictionary} sendContactEmail={this.sendContactEmail}
                 sendMailInProgress={this.props.sendMailInProgress} sendMailIsSuccessful={this.props.sendMailIsSuccessful} />

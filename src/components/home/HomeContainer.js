@@ -12,13 +12,13 @@ class HomeContainer extends React.Component {
         let enDictionary = {
             name: 'ryna', surname: 'Martyniuk', text: 'web developer',
             introduction: 'Dedicated to work, active and responsible web-based applications developer, creating products I want to be proud of. ' +
-                'Here I am presenting my profile website, where you can find my resume and contact me pages. This website is developed using ReactJS, source code of which you can find on github environment and familiarize yourself slightly with my style of work.'
+                'Here I am presenting my profile website, where you can find my resume and contact me pages. This website is developed using ReactJS (+ Redux), source code of which you can find on github environment and familiarize yourself slightly with my style of work.'
         };
 
         let uaDictionary = {
             name: 'рина', surname: 'Мартинюк', text: 'web developer',
             introduction: 'Віддана роботі, активна і відповідальна. Розробник веб-додатків, якими хочу пишатися. ' +
-                'Представляю веб-сайт свого профілю, де ви можете знайти моє резюме та сторінку контактів. Цей веб-сайт розроблений за допомогою ReactJS, код якого ви можете знайти в середовищі github та трохи ознайомитись із моїм стилем роботи.'
+                'Представляю веб-сайт свого профілю, де ви можете знайти моє резюме та сторінку контактів. Цей веб-сайт розроблений за допомогою ReactJS (+ Redux), код якого ви можете знайти в середовищі github та трохи ознайомитись із моїм стилем роботи.'
         };
 
         switch (this.props.currentLanguage) {
